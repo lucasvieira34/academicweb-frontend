@@ -1,0 +1,18 @@
+.imagem-portal {
+	object-fit: fill;
+	width: inherit;
+	height: fit-content;
+}
+
+.container-login {
+	padding-top: 50px;
+	max-width: 300px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo-login {
+	height: 200px;
+	width: 200px;
+}
