@@ -2,7 +2,8 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
-	background: url(../img/educacao.png) no-repeat center center fixed;
+	background-image: url(../img/tema-login.jpg);
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 50px;
 }
@@ -12,10 +13,10 @@ body{
 	padding: 0;
 }
 .modal-content{
-	background-color: #3B4652;
+	background-color: #ff811f;
 	opacity: .95;
 	padding: 0 18px;
-	box-shadow: 0px 0px 3px #848484;
+	box-shadow: 0px 0px 3px #FA8021;
 }
 .user-img{
 	margin-top: -50px;
@@ -25,7 +26,7 @@ body{
 	height: 100px;
 	width: 100px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 2px #3B4652;
+	box-shadow: 0px 0px 2px #FA8021;
 }
 .form-group{
 	margin-bottom: 25px;
@@ -66,18 +67,17 @@ button{
 	margin: 10px 0 15px;
 }
 .btn{
-	background-color: #27C2A5;
-	color: #fff;
+	background-color: white;
+	color: #495057;
 	font-size: 19px;
 	padding: 7px 14px;
 	border-radius: 5px;
-	border-bottom: 4px solid #219882;
 }
 .btn:hover, .btn:focus{
 	background-color: #25A890!important;
-	border-bottom: 4px solid #25A890!important;
 }
 .svg-inline--fa{
+	color: #555E60;
 	font-size: 20px;
 	margin-right: 7px;
 }
