@@ -9,23 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portal Escolar Academic - Alunos</title>
+  <title>Portal Escolar Academic - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link href="css/dashboard.css" rel="stylesheet">
-  <link href="css/listar_aluno.css" rel="stylesheet" />
-
-  <!-- Custom styles for this page -->
-  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -50,7 +44,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="professor_dashboard.html">
+        <a class="nav-link" href="aluno_dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -65,9 +59,9 @@
 
       <!-- Nav Item -->
       <li class="nav-item">
-        <a class="nav-link" href="listar_alunos.html">
+        <a class="nav-link" href="listar_disciplinas.html">
           <i class="fas fa-fw fa-graduation-cap"></i>
-          <span>Nome da Disciplina</span>
+          <span>Minhas Disciplinas</span>
         </a>
       </li>
 
@@ -143,128 +137,29 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">(Nome da Disciplina)</h1>
-          <p class="mb-4">Listagem de notas de faltas dos alunos referentes à disciplina selecionada.</p>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+          </div>
 
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                      <tr>
-                          <th></th>
-                          <th>Nome</th>
-                          <th>Sobrenome</th>
-                          <th>A1</th>
-                          <th>A2</th>
-                          <th>Faltas</th>
-                          <th></th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Lucas</td>
-                          <td>Teixeira</td>
-                          <td>8</td>
-                          <td>7.5</td>
-                          <td>1</td>
-                          <td><a href="#"><i class="medium material-icons icon-orange">edit</i></a></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Paula</td>
-                          <td>Barreiro</td>
-                          <td>6</td>
-                          <td>8.5</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Bruna</td>
-                          <td>Bencke</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Rodrigo</td>
-                          <td>Lima</td>
-                          <td>5.5</td>
-                          <td>6.7</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Amanda</td>
-                          <td>Lopes</td>
-                          <td>5</td>
-                          <td>7.6</td>
-                          <td>4</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Duda</td>
-                          <td>Peixoto</td>
-                          <td>7.6</td>
-                          <td>8.4</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Felipe</td>
-                          <td>Teixeira</td>
-                          <td>9</td>
-                          <td>8.4</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Roberta</td>
-                          <td>Ciarlini</td>
-                          <td>4.5</td>
-                          <td>8</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Ágatha</td>
-                          <td>Rebeca</td>
-                          <td>6</td>
-                          <td>5.4</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>João</td>
-                          <td>Guilherme</td>
-                          <td>6</td>
-                          <td>7</td>
-                          <td>3</td>
-                          <td></td>
-                      </tr>
-                      <tr>
-                          <td><i class="medium material-icons">person</i></td>
-                          <td>Maria</td>
-                          <td>Luiza</td>
-                          <td>7.5</td>
-                          <td>7.5</td>
-                          <td>0</td>
-                          <td></td>
-                      </tr>
-                  </tbody>
-                </table>
+          <!-- Content Row -->
+          <div class="row">
+
+            <div class="col-lg-12 mb-4">
+
+              <!-- Illustrations -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Ilustração</h6>
+                </div>
+                <div class="card-body">
+                  <div class="text-center">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/portal-aluno.jpg" alt="">
+                  </div>
+                  <p>Bem vindo ao Portal do Aluno - Academic Web!</p>
+                  <p>Neste portal você poderá consultar as notas de todas as suas disciplinas.</p>
+                </div>
               </div>
+
             </div>
           </div>
 
@@ -323,15 +218,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/datatables-demo.js"></script>
-
-  <script src="js/notas.js"></script>
 
 </body>
 
