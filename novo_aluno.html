@@ -9,23 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portal Escolar Academic - Alunos</title>
+  <title>Portal Escolar Academic - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link href="css/dashboard.css" rel="stylesheet">
-  <link href="css/listar_aluno.css" rel="stylesheet" />
-
-  <!-- Custom styles for this page -->
-  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -49,10 +43,66 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="aluno_dashboard.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="secretaria_dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Alunos
+      </div>
+
+      <!-- Nav Item -->
+      <li class="nav-item">
+        <a class="nav-link pb-1" href="#">
+          <i class="fas fa-fw fa-list"></i>
+          <span>Lista de Alunos</span>
+        </a>
+      </li>
+
+      <!-- Nav Item -->
+      <li class="nav-item">
+        <a class="nav-link pt-1" href="#">
+          <i class="fas fa-fw fa-user-graduate"></i>
+          <span>Cadastro de Aluno</span>
+        </a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Professores
+      </div>
+
+      <!-- Nav Item -->
+      <li class="nav-item">
+        <a class="nav-link pb-1" href="#">
+          <i class="fas fa-fw fa-list"></i>
+          <span>Lista de Professores</span>
+        </a>
+      </li>
+
+      <!-- Nav Item -->
+      <li class="nav-item">
+        <a class="nav-link pt-1 pb-1" href="#">
+          <i class="fas fa-fw fa-plus"></i>
+          <span>Associar Disciplina</span>
+        </a>
+      </li>
+
+      <!-- Nav Item -->
+      <li class="nav-item">
+        <a class="nav-link pt-1" href="#">
+          <i class="fas fa-fw fa-chalkboard-teacher"></i>
+          <span>Cadastro de Professor</span>
+        </a>
       </li>
 
       <!-- Divider -->
@@ -64,10 +114,10 @@
       </div>
 
       <!-- Nav Item -->
-      <li class="nav-item active">
-        <a class="nav-link" href="listar_disciplinas.html">
-          <i class="fas fa-fw fa-graduation-cap"></i>
-          <span>Minhas Disciplinas</span>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-list"></i>
+          <span>Lista de Disciplinas</span>
         </a>
       </li>
 
@@ -76,13 +126,13 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Perfil
+        Meu Perfil
       </div>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-cog"></i>
+          <i class="fas fa-fw fa-user-edit"></i>
           <span>Editar</span></a>
       </li>
 
@@ -143,111 +193,72 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">(Nome do Aluno)</h1>
-          <p class="mb-4">Listagem de notas de faltas do alunos.</p>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Cadastro de Aluno</h1>
+          </div>
 
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-striped" id="myTable" width="100%" cellspacing="0">
-                  <thead>
-                      <tr>
-                          <th></th>
-                          <th>Nome</th>
-                          <th>A1</th>
-                          <th>A2</th>
-                          <th>Faltas</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Português</td>
-                          <td>8</td>
-                          <td>7.5</td>
-                          <td>1</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Redação</td>
-                          <td>6</td>
-                          <td>8.5</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Álgebra</td>
-                          <td>5</td>
-                          <td>6</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Aritmética</td>
-                          <td>5.5</td>
-                          <td>6.7</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Geometria</td>
-                          <td>5</td>
-                          <td>7.6</td>
-                          <td>4</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>História</td>
-                          <td>7.6</td>
-                          <td>8.4</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Geografia</td>
-                          <td>4.5</td>
-                          <td>8</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Química</td>
-                          <td>6</td>
-                          <td>5.4</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Física</td>
-                          <td>6</td>
-                          <td>7</td>
-                          <td>3</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>Inglês</td>
-                          <td>7.5</td>
-                          <td>7.5</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                        <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                        <td>Artes</td>
-                        <td>7</td>
-                        <td>6.5</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                        <td>Teatro</td>
-                        <td>7.5</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <!-- Content Row -->
+          <div class="row">
+
+            <div class="col-lg-12 mb-4">
+
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome">
+                    <small class="form-text text-muted">
+                    Insira o nome do aluno.
+                    </small>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome">
+                    <small class="form-text text-muted">
+                    Insira o sobrenome do aluno.
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="matricula">Matrícula</label>
+                  <input type="text" class="form-control" id="matricula" name="matricula">
+                  <small class="form-text text-muted">
+                  Insira a matrícula do aluno. A matrícula deverá seguir o padrão: 20XXAAAABBB, onde XX é o ano da matrícula e AAAABBB um número aleatório.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                  <small class="form-text text-muted">
+                  Insira o email do aluno.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="emailResponsavel">Email do Responsável</label>
+                  <input type="email" class="form-control" id="emailResponsavel" name="emailResponsavel">
+                  <small class="form-text text-muted">
+                  Insira o email do responsável (pai/mãe).
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="login" name="login">
+                  <small class="form-text text-muted">
+                  Insira o login do aluno.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" class="form-control" name="senha">
+                  <small class="form-text text-muted">
+                  Sua senha precisa ter entre 8-20 caracteres, contendo letras e números e não pode conter espaços, caracteres especiais ou emojis.
+                  </small>
+                </div>
+
+                <button type="submit" class="btn botao-cor-principal">Cadastrar</button>
+
+              </form>
+
             </div>
           </div>
 
@@ -306,15 +317,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/datatables-demo.js"></script>
-
-  <script src="js/notas_alunos.js"></script>
 
 </body>
 
