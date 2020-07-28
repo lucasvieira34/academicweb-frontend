@@ -9,13 +9,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portal Escolar Academic - Dashboard</title>
+  <title>Portal Escolar Academic - Cadastro Aluno</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -43,7 +44,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="secretaria_dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -66,8 +67,8 @@
       </li>
 
       <!-- Nav Item -->
-      <li class="nav-item">
-        <a class="nav-link pt-1" href="#">
+      <li class="nav-item active">
+        <a class="nav-link pt-1" href="novo_aluno.html">
           <i class="fas fa-fw fa-user-graduate"></i>
           <span>Cadastro de Aluno</span>
         </a>
@@ -99,7 +100,7 @@
 
       <!-- Nav Item -->
       <li class="nav-item">
-        <a class="nav-link pt-1" href="#">
+        <a class="nav-link pt-1" href="novo_professor.html">
           <i class="fas fa-fw fa-chalkboard-teacher"></i>
           <span>Cadastro de Professor</span>
         </a>
@@ -203,17 +204,18 @@
             <div class="col-lg-12 mb-4">
 
               <form>
+
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome">
+                    <input type="text" class="form-control" id="nome" name="nome" required>
                     <small class="form-text text-muted">
                     Insira o nome do aluno.
                     </small>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" name="sobrenome">
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
                     <small class="form-text text-muted">
                     Insira o sobrenome do aluno.
                     </small>
@@ -221,7 +223,7 @@
                 </div>
                 <div class="form-group">
                   <label for="matricula">Matrícula</label>
-                  <input type="text" class="form-control" id="matricula" name="matricula">
+                  <input type="text" class="form-control" id="matricula" name="matricula" required>
                   <small class="form-text text-muted">
                   Insira a matrícula do aluno. A matrícula deverá seguir o padrão: 20XXAAAABBB, onde XX é o ano da matrícula e AAAABBB um número aleatório.
                   </small>
@@ -235,23 +237,23 @@
                 </div>
                 <div class="form-group">
                   <label for="emailResponsavel">Email do Responsável</label>
-                  <input type="email" class="form-control" id="emailResponsavel" name="emailResponsavel">
+                  <input type="email" class="form-control" id="emailResponsavel" name="emailResponsavel" required>
                   <small class="form-text text-muted">
                   Insira o email do responsável (pai/mãe).
                   </small>
                 </div>
                 <div class="form-group">
                   <label for="username">Username</label>
-                  <input type="text" class="form-control" id="login" name="login">
+                  <input type="text" class="form-control" id="login" name="login" required>
                   <small class="form-text text-muted">
                   Insira o login do aluno.
                   </small>
                 </div>
                 <div class="form-group">
                   <label for="senha">Senha</label>
-                  <input type="password" id="senha" class="form-control" name="senha">
+                  <input type="password" id="senha" class="form-control" name="senha" required>
                   <small class="form-text text-muted">
-                  Sua senha precisa ter entre 8-20 caracteres, contendo letras e números e não pode conter espaços, caracteres especiais ou emojis.
+                  A senha precisa ter entre 8-20 caracteres, contendo letras e números e não pode conter espaços, caracteres especiais ou emojis.
                   </small>
                 </div>
 
