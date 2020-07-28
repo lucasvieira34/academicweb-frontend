@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portal Escolar Academic - Dashboard</title>
+  <title>Portal Escolar Academic - Professores</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,6 +21,9 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link href="css/dashboard.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -83,7 +86,7 @@
       </div>
 
       <!-- Nav Item -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link pb-1" href="professores.html">
           <i class="fas fa-fw fa-list"></i>
           <span>Lista de Professores</span>
@@ -115,7 +118,7 @@
       </div>
 
       <!-- Nav Item -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="disciplinas.html">
           <i class="fas fa-fw fa-list"></i>
           <span>Lista de Disciplinas</span>
@@ -194,79 +197,35 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Lista das Disciplinas</h1>
+          <h1 class="h3 mb-2 text-gray-800">Lista de Professores</h1>
 
           <div class="card shadow mb-4">
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-striped" id="myTable" width="100%" cellspacing="0">
+                <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                       <tr>
                           <th></th>
-                          <th>Código</th>
+                          <th>Matrícula</th>
                           <th>Nome</th>
+                          <th>Sobrenome</th>
+                          <th></th>
                       </tr>
                   </thead>
                   <tbody>
                       <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>23458765</td>
-                          <td>Português</td>
+                          <td><i class="medium material-icons">person</i></td>
+                          <td>20205438</td>
+                          <td>Lucas</td>
+                          <td>Teixeira</td>
+                          <td><a href="#"><i class="medium material-icons icon-orange">edit</i></a></td>
                       </tr>
                       <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>25764365</td>
-                          <td>Redação</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>45768348</td>
-                          <td>Álgebra</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>53728745</td>
-                          <td>Aritmética</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>65327621</td>
-                          <td>Geometria</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>74352749</td>
-                          <td>História</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>85746432</td>
-                          <td>Geografia</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>95743854</td>
-                          <td>Química</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>10348456</td>
-                          <td>Física</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>11355467</td>
-                          <td>Inglês</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>12654786</td>
-                          <td>Artes</td>
-                      </tr>
-                      <tr>
-                          <td><i class="fas fa-fw fa-graduation-cap"></i></td>
-                          <td>13567438</td>
-                          <td>Teatro</td>
+                          <td><i class="medium material-icons">person</i></td>
+                          <td>20205437</td>
+                          <td>Paula</td>
+                          <td>Barreiro</td>
+                          <td></td>
                       </tr>
                   </tbody>
                 </table>
@@ -329,6 +288,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
