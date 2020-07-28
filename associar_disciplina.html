@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portal Escolar Academic - Dashboard</title>
+  <title>Portal Escolar Academic - Associar Disciplina</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,7 +44,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="secretaria_dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -91,7 +91,7 @@
       </li>
 
       <!-- Nav Item -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link pt-1 pb-1" href="associar_disciplina.html">
           <i class="fas fa-fw fa-plus"></i>
           <span>Associar Disciplina</span>
@@ -195,99 +195,44 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">Professor - Incluir Disciplina</h1>
           </div>
 
           <!-- Content Row -->
           <div class="row">
 
-            <!-- Total de Alunos Cadastrados -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total de Alunos</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">150</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-graduation-cap fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Total de Professores Cadastrados -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total de Professores</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">16</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-chalkboard-teacher fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Total de Funcionários Cadastrados -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total de Funcionários</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">25</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-hard-hat fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Total de Disciplinas Cadastradas -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total de Disciplinas</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-school fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="col-lg-12 mb-4">
 
-              <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Ilustração</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/flat.png" alt="">
+              <form>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" readonly>
                   </div>
-                  <p>Bem vindo ao Portal Escolar - Academic Web!</p>
-                  <p>Neste portal você poderá realizar o cadastro de Alunos, Professores e verificar todos os alunos cadastrados, como os professores e as disciplinas.</p>
+                  <div class="form-group col-md-6">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" readonly>
+                  </div>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label for="matricula">Matrícula</label>
+                  <input type="text" class="form-control" id="matricula" name="matricula" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="inputState">Disciplina(s)</label>
+                  <select class="form-control" id="id_disciplina" name="id_disciplina">
+                  <option selected>Selecione a disciplina...</option>
+                  <option>...</option>
+                  </select>
+                  <small class="form-text text-muted">
+                  Selecione a disciplina na qual deseja associar ao professor.
+                  </small>
+                </div>
+
+                <button type="submit" class="btn botao-cor-principal">Alterar</button>
+
+              </form>
 
             </div>
           </div>
